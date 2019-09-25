@@ -1,0 +1,28 @@
+name: skypemsg
+pack: skypemsg
+runner_type: "python-script"
+description: print message
+enabled: true
+entry_point: skypeMsg.py
+parameters:
+  userName:
+    type: string
+    description: print User Name
+    required: true
+    position: 1
+  password:
+    type: string
+    description: print password
+    required: true
+    position: 2
+  contactName:
+    type: string
+    description: print Contact Name
+    required: true
+    position: 3
+  message:
+    type: string
+    description: print Message
+    required: true
+    position: 4
+  
