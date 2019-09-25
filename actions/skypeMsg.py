@@ -6,7 +6,7 @@ from getpass import getpass # You probably don't want your password shown in pla
 class MyAction(Action):
 
     def run(self, userName,password,contactName,message):
-        sk = Skype(userName, getpass(password))
+        sk = Skype("parvin05.hassan@gmail.com", "Deca_135")
         ch = sk.contacts[contactName].chat
         ch.sendMsg(message) 
         print("message sent!!")
